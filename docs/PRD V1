@@ -60,6 +60,68 @@ The product is intentionally designed to:
 
 ---
 
+# 📱 DUOGRIND — Product Requirement Document (PRD)
+**Version:** 1.0  
+**Author:** Varsha Vasan  
+**Date:** June 2026  
+**Status:** Development Ready  
+
+---
+
+# 1. Executive Summary
+
+DUOGRIND is a mobile-first study application designed to help students overcome procrastination and complete focused study sessions through structured timing and light competitive pressure.
+
+The core idea is simple:  
+Users start a short study session (10–25 minutes), remain engaged through a simulated opponent, and receive immediate feedback upon completion.
+
+Unlike traditional productivity tools that focus heavily on tracking or planning, DUOGRIND prioritizes **action over configuration**, enabling users to transition from intent to execution within seconds.
+
+---
+
+# 2. Problem Statement
+
+Students consistently face difficulty in:
+- Initiating study sessions
+- Maintaining focus for sustained periods
+- Avoiding distractions during study time
+
+Existing applications such as to-do lists and productivity trackers introduce:
+- High setup overhead
+- Cognitive complexity
+- Low emotional engagement
+
+As a result, they fail to address the most critical user need:  
+> **Getting started and staying engaged in the first place**
+
+---
+
+# 3. Product Vision
+
+DUOGRIND aims to become:
+> A frictionless, session-based study companion that encourages consistent focus through structured time blocks and light gamification.
+
+The product is intentionally designed to:
+- Minimize user decisions
+- Reduce friction to near zero
+- Encourage immediate engagement
+
+---
+
+# 4. Target Users
+
+## Primary Audience
+- School and college students
+- Competitive exam aspirants
+- Self-learners (coding, technical subjects)
+
+## User Characteristics
+- Struggle with procrastination
+- Frequently distracted (mobile usage, social media)
+- Prefer short, manageable study sessions
+
+---
+
 # 5. Core Product Concept
 
 DUOGRIND is based on a **time-bound study session model**, where success is defined by **session completion**, not output measurement.
@@ -74,3 +136,179 @@ The system intentionally avoids:
 - Tracking learning output
 - Evaluating study quality
 
+These are considered inconsistent and unreliable metrics.
+
+---
+
+# 6. Scope — Version 1
+
+## 6.1 Included Features
+
+### 6.1.1 Home Screen
+The home screen provides immediate access to the core functionality:
+
+- Start 10-minute session
+- Start 25-minute session
+- Display:
+  - Total focus time for the day
+  - Current streak
+
+No additional configuration or onboarding steps are required.
+
+---
+
+### 6.1.2 Study Session Screen
+
+The session screen represents the core experience of the application.
+
+It includes:
+- A countdown timer
+- A progress indicator for the user
+- A simulated opponent progress bar
+
+The opponent is designed to introduce mild psychological pressure without overwhelming the user.
+
+System behavior:
+- Timer runs continuously
+- Opponent progress varies slightly per session
+- User remains focused until session completion
+
+---
+
+### 6.1.3 Result Screen
+
+At the end of each session, users are presented with:
+
+- Completion status (completed / abandoned)
+- XP reward (fixed)
+- Updated streak value
+
+The goal is to provide immediate reinforcement for completed sessions.
+
+---
+
+### 6.1.4 AI Opponent System (V1)
+
+The opponent is a simulated entity with:
+- Time-based progression
+- Slight randomness in completion time
+
+The system ensures:
+- Early sessions are easier to win
+- Later sessions feel slightly more competitive
+
+This creates engagement without discouraging new users.
+
+---
+
+### 6.1.5 Data Tracking (Local Only)
+
+The following data is stored locally:
+- Total study time
+- Number of sessions completed
+- Streak (days with at least one session)
+
+No backend or cloud storage is included in Version 1.
+
+---
+
+# 7. Excluded Features (Explicit Non-Goals)
+
+To maintain simplicity and ensure rapid delivery, the following features are intentionally excluded:
+
+- Social interactions (friends, challenges, multiplayer)
+- Chat or messaging systems
+- Screen usage monitoring (Screen Time API)
+- App blocking or enforcement systems
+- Advanced rewards, levels, or marketplace
+- Detailed analytics dashboards
+
+These may be considered in future versions based on user validation.
+
+---
+
+# 8. User Flow
+
+The primary user journey is designed to be linear and frictionless.
+---
+
+# 9. UX Principles
+
+The product is guided by the following principles:
+
+## 9.1 Instant Action
+Users must be able to start a session within **10 seconds** of opening the app.
+
+## 9.2 Minimal Cognitive Load
+- No complex setup
+- No unnecessary decisions
+- Clear and limited options
+
+## 9.3 Calm Yet Engaging Interface
+- Dark theme for reduced strain
+- Subtle animations
+- Minimal gamification elements
+
+## 9.4 Positive Reinforcement
+- Reward completion
+- Avoid heavy penalties in early stages
+
+---
+
+# 10. Metrics and Evaluation
+
+To evaluate product success, the following metrics will be tracked:
+
+- Session start rate
+- Session completion rate
+- Average sessions per user
+- Day 1 and Day 3 retention
+
+These metrics will guide future iterations.
+
+---
+
+# 11. Technical Approach
+
+## Platform
+- React Native (Expo)
+
+## Storage
+- Local storage (AsyncStorage)
+
+## Backend
+- Not included in Version 1
+
+## Key Design Decision
+The absence of a backend allows:
+- Faster development
+- Reduced complexity
+- Easier iteration
+
+---
+
+# 12. Future Roadmap (Post V1)
+
+Potential enhancements include:
+
+- Social duels (real users)
+- Screen tracking integration
+- Focus enforcement (app blocking)
+- Cloud sync and user accounts
+- Advanced reward systems
+
+---
+
+# 13. Conclusion
+
+DUOGRIND is designed to address a fundamental gap in productivity tools:
+> The difficulty of starting and completing focused work sessions.
+
+By prioritizing immediacy, simplicity, and light engagement, the product aims to create a repeatable habit loop that encourages consistent study behavior.
+
+The success of Version 1 depends not on feature depth, but on:
+- user adoption
+- session completion
+- early retention
+
+---
