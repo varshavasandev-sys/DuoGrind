@@ -5,20 +5,19 @@
 ```mermaid
 flowchart TD
 
-    A[User (Mobile App)] --> B[React Native App]
+    A[User Mobile App] --> B[React Native App]
 
-    subgraph Client Layer
-        B --> C[Screens Layer]
-        B --> D[Components Layer]
-        B --> E[Hooks (Business Logic)]
+    subgraph Client_Layer
+        B --> C[Screens]
+        B --> D[Components]
+        B --> E[Hooks Logic]
         B --> F[Theme System]
     end
 
     C --> E
     D --> E
 
-    E --> G[State Management (React State)]
-    G --> H[Local Storage (AsyncStorage)]
+    E --> G[State Management]
+    G --> H[Local Storage AsyncStorage]
 
     H --> G
-
