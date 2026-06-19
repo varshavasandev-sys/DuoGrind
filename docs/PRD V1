@@ -1,0 +1,76 @@
+# 📱 DUOGRIND — Product Requirement Document (PRD)
+**Version:** 1.0  
+**Author:** Varsha Vasan  
+**Date:** June 2026  
+**Status:** Development Ready  
+
+---
+
+# 1. Executive Summary
+
+DUOGRIND is a mobile-first study application designed to help students overcome procrastination and complete focused study sessions through structured timing and light competitive pressure.
+
+The core idea is simple:  
+Users start a short study session (10–25 minutes), remain engaged through a simulated opponent, and receive immediate feedback upon completion.
+
+Unlike traditional productivity tools that focus heavily on tracking or planning, DUOGRIND prioritizes **action over configuration**, enabling users to transition from intent to execution within seconds.
+
+---
+
+# 2. Problem Statement
+
+Students consistently face difficulty in:
+- Initiating study sessions
+- Maintaining focus for sustained periods
+- Avoiding distractions during study time
+
+Existing applications such as to-do lists and productivity trackers introduce:
+- High setup overhead
+- Cognitive complexity
+- Low emotional engagement
+
+As a result, they fail to address the most critical user need:  
+> **Getting started and staying engaged in the first place**
+
+---
+
+# 3. Product Vision
+
+DUOGRIND aims to become:
+> A frictionless, session-based study companion that encourages consistent focus through structured time blocks and light gamification.
+
+The product is intentionally designed to:
+- Minimize user decisions
+- Reduce friction to near zero
+- Encourage immediate engagement
+
+---
+
+# 4. Target Users
+
+## Primary Audience
+- School and college students
+- Competitive exam aspirants
+- Self-learners (coding, technical subjects)
+
+## User Characteristics
+- Struggle with procrastination
+- Frequently distracted (mobile usage, social media)
+- Prefer short, manageable study sessions
+
+---
+
+# 5. Core Product Concept
+
+DUOGRIND is based on a **time-bound study session model**, where success is defined by **session completion**, not output measurement.
+
+Each session includes:
+- A fixed duration (10 or 25 minutes)
+- A simulated opponent (AI-driven)
+- A simple completion outcome (success/failure)
+
+The system intentionally avoids:
+- Measuring pages completed
+- Tracking learning output
+- Evaluating study quality
+
